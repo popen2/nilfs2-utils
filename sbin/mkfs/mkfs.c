@@ -1528,6 +1528,7 @@ static void prepare_segment(struct nilfs_segment_info *si)
 	nilfs.files[NILFS_CPFILE_INO]->raw_inode = &sr->sr_cpfile;
 	nilfs.files[NILFS_SUFILE_INO]->raw_inode = &sr->sr_sufile;
 	nilfs.files[NILFS_DAT_INO]->raw_inode = &sr->sr_dat;
+	nilfs.files[NILFS_ATIME_INO]->raw_inode = &sr->sr_atimefile;
 
 	prepare_dat();
 	prepare_sufile();
