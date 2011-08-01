@@ -101,6 +101,7 @@ struct nilfs_super_root {
 	struct nilfs_inode sr_dat;
 	struct nilfs_inode sr_cpfile;
 	struct nilfs_inode sr_sufile;
+	struct nilfs_inode sr_atimefile;
 };
 
 #define NILFS_SR_MDT_OFFSET(inode_size, i)  \
