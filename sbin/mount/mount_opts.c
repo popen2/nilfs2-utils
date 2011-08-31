@@ -94,6 +94,9 @@ static const struct opt_map opt_map[] = {
 	{ "diratime",	0, 1, MS_NODIRATIME },	/* Update dir access times */
 	{ "nodiratime", 0, 0, MS_NODIRATIME },	/* Do not update dir access times */
 #endif
+#ifdef MS_STRICTATIME
+	{ "strictatime",0, 0, MS_STRICTATIME },	/* Update access time on every read */
+#endif
 	{ NULL,	0, 0, 0		}
 };
 

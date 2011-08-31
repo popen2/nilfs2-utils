@@ -67,6 +67,9 @@ if we have a stack or plain mount - mount atop of it, forming a stack. */
 #ifndef MS_VERBOSE
 #define MS_VERBOSE	0x8000	/* 32768 */
 #endif
+#ifndef MS_STRICTATIME
+#define MS_STRICTATIME	(1<<24) /* Always perform atime updates */
+#endif
 /*
  * Magic mount flag number. Had to be or-ed to the flag values.
  */
